@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    /* Customize page styles here */
+    body {
+      font-family: Poppins, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: #fff;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      font-size: 4rem; /* Increased font size */
+      color: #111;
+      background: linear-gradient(to right, #0000, #4000ff, #0000);
+      border-radius: 100px;
+    }
+
+    form {
+
+      background-color: rgba(31, 32, 41, 0.5);
+      border-radius: 25px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      background-color: rgba(31, 32, 41, 0.5);
+      color: #fff;
+    }
+    p {
+      text-align: left;
+      font-size: 0.7rem;
+      margin-bottom: 30px;
+      color:#999999;
+    }
+
+    button[type="submit"] {
+      border: none;
+      padding: 12px 20px;
+      cursor: pointer;
+      float: right;
+      background-color: #4000ff;
+      color: #fff;
+      border: 2px solid transparent; /* Added transparent border */
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #3100c4; /* Changed gradient color on hover */
+      border-color: #4000ff; /* Changed border color on hover */
+      color: #fff; /* Changed text color on hover */
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8">
+    <title>Log In</title>
+  </head>
+  <body>
+    <h1>Log In</h1>
+    <form action="index.html" method="post">
+      <label for="name">Username/Email</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+      <p><a href="#" style="color:dodgerblue">Forgot Password?</a>.</p>
+      <button type="submit">Log In</button>
+    </form>
+  </body>
+</html>
